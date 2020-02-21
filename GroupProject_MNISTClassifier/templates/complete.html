@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Title</title>
+	</head>
+	<body>
+
+		{% if prediction is defined %}
+		<h2>The Photo entered contains the digit: "{{ prediction }}"</h2>
+		{% endif %}
+
+		{% if accuracy is defined %}
+		<h2>The Accuracy is: "{{ accuracy }}"</h2>
+		{% endif %}
+	</body>
+</html> 

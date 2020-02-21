@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	    <meta charset="UTF-8">
+	    <title>MNIST Classifier</title>
+	</head>
+	<body>
+		<h1>MNIST Classifier</h1>
+		This takes in input from the user a file and then passes it through the predict() function of the ANN run over the MNIST Dataset.
+
+		<form id="upload-form" action="{{ url_for('upload') }}" method="POST" enctype="multipart/form-data">
+			<input type="file" name="file" accept="image/*" multiple>
+		    <input type="submit" value="send">
+		</form>
+	</body>
+</html>
